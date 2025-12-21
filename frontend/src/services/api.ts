@@ -337,8 +337,12 @@ export const createSearchablePdf = async (
 // ============ Utility Functions ============
 
 export const downloadFile = (url: string, filename: string): void => {
+  // Get the API URL from environment or default to localhost:8000
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+  // Prepend API_URL if the URL is a relative path
+  const absoluteUrl = url.startsWith('/') ? `${API_URL}${url}` : url;
   const link = document.createElement('a');
-  link.href = url;
+  link.href = absoluteUrl;
   link.download = filename;
   document.body.appendChild(link);
   link.click();

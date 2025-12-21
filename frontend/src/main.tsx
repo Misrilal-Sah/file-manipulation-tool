@@ -117,8 +117,10 @@ function SuccessModal({ isOpen, onClose, outputs, message, toolIcon }: {
   if (!isOpen) return null
   
   const downloadFile = (url: string, filename: string) => {
+    // Prepend API_URL if the URL is a relative path
+    const absoluteUrl = url.startsWith('/') ? `${API_URL}${url}` : url
     const link = document.createElement('a')
-    link.href = url; link.download = filename; link.target = '_blank'
+    link.href = absoluteUrl; link.download = filename; link.target = '_blank'
     document.body.appendChild(link); link.click(); document.body.removeChild(link)
   }
   
