@@ -108,7 +108,7 @@ const allTools: Tool[] = [
 ]
 
 // Tools that are implemented
-const implementedTools = ['merge', 'split', 'extract', 'remove-pages', 'organize-pages', 'compress', 'repair', 'ocr', 'jpg-to-pdf', 'word-to-pdf', 'ppt-to-pdf', 'excel-to-pdf', 'html-to-pdf', 'pdf-to-jpg', 'pdf-to-word', 'pdf-to-ppt', 'rotate', 'rotate-individual', 'add-blank-page', 'page-numbers', 'watermark', 'crop', 'unlock', 'protect', 'sign', 'redact']
+const implementedTools = ['merge', 'split', 'extract', 'remove-pages', 'organize-pages', 'compress', 'repair', 'jpg-to-pdf', 'word-to-pdf', 'ppt-to-pdf', 'excel-to-pdf', 'html-to-pdf', 'pdf-to-jpg', 'pdf-to-word', 'pdf-to-ppt', 'rotate', 'rotate-individual', 'add-blank-page', 'page-numbers', 'watermark', 'crop', 'unlock', 'protect', 'sign', 'redact']
 
 // Success Popup Modal
 function SuccessModal({ isOpen, onClose, outputs, message, toolIcon }: { 
