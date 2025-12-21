@@ -462,7 +462,7 @@ function App() {
     if (!uploadedFiles?.length) return
     
     // Limit to 1 file for sign and redact tools
-    if ((selectedTool.id === 'sign' || selectedTool.id === 'redact') && uploadedFiles.length > 1) {
+    if ((selectedTool?.id === 'sign' || selectedTool?.id === 'redact') && uploadedFiles.length > 1) {
       setValidationMessage('⚠️ Only 1 PDF can be uploaded for signing and redaction.')
       setShowValidation(true)
       return

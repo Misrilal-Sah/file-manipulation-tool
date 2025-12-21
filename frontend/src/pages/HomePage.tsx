@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { 
   FileText, FileType, ArrowLeftRight, Layers, Split, 
-  RotateCw, Compress, Lock, Unlock, Type, Image, Scan,
+  RotateCw, Minimize2, Lock, Unlock, Type, Image, Scan,
   Sparkles, Zap, Shield, ArrowRight
 } from 'lucide-react';
 
@@ -9,7 +9,7 @@ const pdfTools = [
   { id: 'merge', name: 'Merge PDFs', icon: Layers, color: 'from-blue-500 to-blue-600' },
   { id: 'split', name: 'Split PDF', icon: Split, color: 'from-purple-500 to-purple-600' },
   { id: 'rotate', name: 'Rotate Pages', icon: RotateCw, color: 'from-teal-500 to-teal-600' },
-  { id: 'compress', name: 'Compress PDF', icon: Compress, color: 'from-green-500 to-green-600' },
+  { id: 'compress', name: 'Compress PDF', icon: Minimize2, color: 'from-green-500 to-green-600' },
   { id: 'protect', name: 'Protect PDF', icon: Lock, color: 'from-red-500 to-red-600' },
   { id: 'unlock', name: 'Unlock PDF', icon: Unlock, color: 'from-orange-500 to-orange-600' },
 ];

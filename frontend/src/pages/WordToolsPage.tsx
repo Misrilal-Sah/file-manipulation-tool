@@ -297,7 +297,7 @@ export default function WordToolsPage() {
                 </>
               ) : (
                 <>
-                  <currentTool.icon className="w-5 h-5" />
+                  {currentTool && <currentTool.icon className="w-5 h-5" />}
                   {currentTool?.name}
                 </>
               )}

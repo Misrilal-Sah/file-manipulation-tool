@@ -10,6 +10,9 @@ import type {
   FormField
 } from '../types';
 
+// Re-export types so they can be used as api.OperationResponse etc.
+export type { OperationResponse, MultipleOutputResponse, WarningResponse };
+
 const API_BASE = '/api';
 
 // Create axios instance

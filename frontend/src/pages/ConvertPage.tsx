@@ -315,7 +315,7 @@ export default function ConvertPage() {
               <div className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 dark:bg-green-900/30 
                               flex items-center justify-center">
-                  <currentConversion.icon className="w-8 h-8 text-green-500" />
+                  {currentConversion && <currentConversion.icon className="w-8 h-8 text-green-500" />}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                   Conversion Complete

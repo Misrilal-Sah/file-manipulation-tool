@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { 
   FileText, Layers, Split, RotateCw, Trash2, Scissors, 
-  Compress, Lock, Unlock, Type, Download, RefreshCw
+  Minimize2, Lock, Unlock, Type, Download, RefreshCw
 } from 'lucide-react';
 import FileUploader, { FileList } from '../components/upload/FileUploader';
 import { useDocumentStore } from '../store/documentStore';
@@ -14,7 +14,7 @@ const tools = [
   { id: 'rotate', name: 'Rotate Pages', icon: RotateCw, description: 'Rotate pages 90°, 180°, or 270°' },
   { id: 'delete', name: 'Delete Pages', icon: Trash2, description: 'Remove pages from PDF' },
   { id: 'extract', name: 'Extract Pages', icon: Scissors, description: 'Extract specific pages' },
-  { id: 'compress', name: 'Compress', icon: Compress, description: 'Reduce PDF file size' },
+  { id: 'compress', name: 'Compress', icon: Minimize2, description: 'Reduce PDF file size' },
   { id: 'protect', name: 'Protect', icon: Lock, description: 'Add password protection' },
   { id: 'unlock', name: 'Unlock', icon: Unlock, description: 'Remove password protection' },
   { id: 'watermark', name: 'Watermark', icon: Type, description: 'Add text watermark' },
@@ -366,7 +366,7 @@ export default function PdfToolsPage() {
                 </>
               ) : (
                 <>
-                  <currentTool.icon className="w-5 h-5" />
+                  {currentTool && <currentTool.icon className="w-5 h-5" />}
                   {currentTool?.name}
                 </>
               )}

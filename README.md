@@ -71,21 +71,6 @@ PDFease is a modern, user-friendly web application that provides a comprehensive
 - **Smooth Animations** - Polished user experience
 - **Accessibility** - Clear text and proper contrast
 
-## � Deployment
-
-### Deploy to Render (Recommended)
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
-1. Click the button above or go to [Render Dashboard](https://dashboard.render.com)
-2. Connect your GitHub repository
-3. Render will automatically detect `render.yaml`
-4. Set environment variables (see [DEPLOY.md](DEPLOY.md))
-5. Deploy! Both frontend and backend will be live in minutes
-
-**📖 Full deployment guide:** [DEPLOY.md](DEPLOY.md)
-
-**Free Tier:** Both services can run on Render's free tier
 
 ## �🛠️ Installation
 
