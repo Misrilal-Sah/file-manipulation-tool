@@ -44,7 +44,8 @@ export default function RedactionViewer({ fileId, onAreasChange }: RedactionView
       setLoading(true)
       setError(null)
       try {
-        const pdfUrl = `http://127.0.0.1:8000/uploads/${fileId}.pdf`
+        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+        const pdfUrl = `${API_URL}/uploads/${fileId}.pdf`
         console.log('Loading PDF from:', pdfUrl)
         const loadingTask = pdfjsLib.getDocument(pdfUrl)
         const pdf = await loadingTask.promise
