@@ -10,4 +10,4 @@ pytesseract==0.3.10
 aiofiles==23.2.1
 pydantic==2.5.3
 pydantic-settings==2.1.0
-python-magic-bin==0.4.14
+
