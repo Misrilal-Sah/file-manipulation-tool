@@ -35,7 +35,7 @@ export default function PdfPageViewer({ fileId, onFieldsChange, signatureConfig 
   const [selectedPage, setSelectedPage] = useState(1)
   const [pageThumbnails, setPageThumbnails] = useState<string[]>([])
   const [placedFields, setPlacedFields] = useState<PlacedField[]>([])
-  const [zoom, setZoom] = useState(1.25)
+  const [zoom, setZoom] = useState(0.75)
   const [selectedFieldId, setSelectedFieldId] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)

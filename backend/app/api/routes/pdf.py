@@ -725,6 +725,15 @@ async def sign_pdf(request: PdfSignRequest):
         # Convert placed fields to dict format
         fields_data = [field.dict() for field in request.placed_fields]
         
+        # Debug: Log received fields
+        print(f"\n=== SIGN PDF DEBUG ===")
+        print(f"Number of fields received: {len(request.placed_fields)}")
+        for i, field in enumerate(fields_data):
+            print(f"Field {i+1}: type={field.get('field_type')}, page={field.get('page')}")
+            print(f"  Coords: x={field.get('x')}, y={field.get('y')}, w={field.get('width')}, h={field.get('height')}")
+            print(f"  Value: {field.get('value')[:50] if field.get('value') else None}")
+            print(f"  Has image_data: {bool(field.get('image_data'))}")
+        
         output_path, display_filename = pdf_service.sign_pdf(
             file_path,
             fields_data,

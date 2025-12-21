@@ -1095,9 +1095,8 @@ class PDFService:
                 # Frontend sends coordinates in canvas pixels at zoom*1.5 scale
                 # We need to convert to PDF points
                 # The frontend renders at scale = zoom * 1.5
-                # Default zoom is 1.25, so default scale is 1.25 * 1.5 = 1.875
-                # We'll use a dynamic calculation based on the assumption of default zoom
-                scale_factor = 1.875  # 1.25 (default zoom) * 1.5 (PDF.js scale)
+                # Default zoom is 0.75, so default scale is 0.75 * 1.5 = 1.125
+                scale_factor = 1.125
                 
                 # Convert canvas coordinates to PDF coordinates
                 pdf_x = field['x'] / scale_factor
@@ -1198,7 +1197,7 @@ class PDFService:
                 page_rect = page.rect
                 
                 # Convert canvas coordinates to PDF coordinates (same as sign PDF)
-                scale_factor = 1.875  # 1.25 (default zoom) * 1.5 (PDF.js scale)
+                scale_factor = 1.125  # 0.75 (default zoom) * 1.5 (PDF.js scale)
                 
                 pdf_x = area['x'] / scale_factor
                 pdf_y = area['y'] / scale_factor

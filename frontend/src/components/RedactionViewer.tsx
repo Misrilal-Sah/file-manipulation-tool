@@ -25,7 +25,7 @@ export default function RedactionViewer({ fileId, onAreasChange }: RedactionView
   const [selectedPage, setSelectedPage] = useState(1)
   const [pageThumbnails, setPageThumbnails] = useState<string[]>([])
   const [markedAreas, setMarkedAreas] = useState<RedactionArea[]>([])
-  const [zoom, setZoom] = useState(1.25)
+  const [zoom, setZoom] = useState(0.75)
   const [selectedAreaId, setSelectedAreaId] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
