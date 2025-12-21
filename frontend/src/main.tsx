@@ -2109,7 +2109,7 @@ function App() {
                     <p className="text-sm text-gray-700 font-medium truncate">{redactionFileName}</p>
                   </div>
                   <a
-                    href={redactionDownloadUrl}
+                    href={redactionDownloadUrl?.startsWith('/') ? `${API_URL}${redactionDownloadUrl}` : redactionDownloadUrl || ''}
                     download={redactionFileName}
                     className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold text-sm flex items-center gap-2 flex-shrink-0"
                   >
