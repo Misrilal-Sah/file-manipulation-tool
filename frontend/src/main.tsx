@@ -763,7 +763,7 @@ function App() {
             return
           }
           endpoint = '/api/pdf/redact'
-          body = { file_id: files[0].file_id, redactions, original_filename: files[0].filename }
+          body = { file_id: files[0].file_id, redaction_areas: redactions, original_filename: files[0].filename }
           break
         case 'sign':
           if (!signatureConfig || placedFields.length === 0) {

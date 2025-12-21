@@ -109,11 +109,6 @@ class PdfEditTextRequest(BaseModel):
     original_filename: Optional[str] = None
 
 
-class PdfRedactRequest(BaseModel):
-    """Request to redact areas in PDF"""
-    file_id: str
-    redactions: List[dict] = Field(description="List of {page, x, y, width, height}")
-    original_filename: Optional[str] = None
 
 
 class PlacedFieldModel(BaseModel):
