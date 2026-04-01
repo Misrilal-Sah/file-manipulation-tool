@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 🌊 Animated Wave Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=220&amp;section=header&amp;text=PDFease&amp;fontSize=86&amp;fontColor=ffffff&amp;animation=twinkling&amp;fontAlignY=38&amp;desc=The%20Ultimate%20Free%20PDF%20%26%20Document%20Toolkit&amp;descSize=22&amp;descAlignY=60&amp;descColor=d0e8ff" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=220&amp;section=header&amp;text=PDFease&amp;fontSize=86&amp;fontColor=ffffff&amp;animation=twinkling&amp;fontAlignY=38&amp;desc=The%20Ultimate%20Free%20PDF%20%26amp%3B%20Document%20Toolkit&amp;descSize=22&amp;descAlignY=60&amp;descColor=d0e8ff" width="100%" />
 
 <!-- 🔤 Animated Typing Subtitle -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=22&amp;pause=1200&amp;color=6366F1&amp;center=true&amp;vCenter=true&amp;width=800&amp;lines=%F0%9F%9A%80+Merge+%7C+Split+%7C+Convert+%7C+Compress+PDFs;%F0%9F%94%90+Sign+%7C+Redact+%7C+Protect+%7C+Unlock+PDFs;%F0%9F%93%9D+Word+Documents+%E2%86%94+PDF+Conversions;%F0%9F%94%8D+OCR+%7C+Thumbnails+%7C+Page+Previews;%E2%9A%A1+Powered+by+FastAPI+%2B+React+18+%2B+PyMuPDF" alt="Typing SVG" />
