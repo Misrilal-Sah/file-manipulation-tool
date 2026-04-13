@@ -372,7 +372,6 @@ Found a bug? Have a feature idea?
 
 **Built with ❤️ using React · FastAPI · PyMuPDF**
 
-<!-- 🌊 Animated Wave Footer -->
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=120&amp;section=footer&amp;animation=twinkling&amp;fontColor=ffffff" width="100%" />
 
 </div>
