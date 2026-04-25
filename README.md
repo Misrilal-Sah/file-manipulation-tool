@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- 🌊 Animated Wave Header -->
+<!--  Animated Wave Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=220&amp;section=header&amp;text=PDFease&amp;fontSize=86&amp;fontColor=ffffff&amp;animation=twinkling&amp;fontAlignY=38&amp;desc=The%20Ultimate%20Free%20PDF%20%26amp%3B%20Document%20Toolkit&amp;descSize=22&amp;descAlignY=60&amp;descColor=d0e8ff" width="100%" />
 
 <!-- 🔤 Animated Typing Subtitle -->
